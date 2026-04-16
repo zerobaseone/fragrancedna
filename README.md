@@ -1,3 +1,3 @@
 # fragrancedna
-recommender algorithm for fragrances
-TF-IDF and cosine similarity
+
+This project was originally a personal/exploratory project in a Jupyter notebook seeking to understand how recommendation algorithms work.  The goal is to find similar fragrances to a target fragrance using a dataset scraped from Fragrantica, a leading fragrance note website.  My research for this project led me to “Recommender Systems: The Textbook” by Aggarwal, which I credit for the TF-IDF/cosine similarity approach.  A final foray into nonnegative matrix factorization dips into machine learning techniques, solving the "vocabulary" problem of beginners to perfumery lacking the vocabulary to discover their preferences.
