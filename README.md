@@ -1,5 +1,5 @@
-# fragrancedna
+# FragranceDNA
 
-This project was originally a personal/exploratory project in a Jupyter notebook seeking to understand how recommendation algorithms work.  The goal is to find similar fragrances to a target fragrance using a dataset scraped from Fragrantica, a leading fragrance note website. 
+FragranceDNA solves a practical problem: people new to perfumery often struggle to articulate what they like beyond naming specific fragrances that they enjoy.  This project addresses that in two ways – given a fragrance that the user enjoys, it returns a ranked list of similar fragrances, and it identifies which ‘archetypes’ best describe their taste, giving them a vocabulary to use when exploring on their own.
 
-My research for this project led me to “Recommender Systems: The Textbook” by Aggarwal, which I credit for the TF-IDF/cosine similarity approach.  A final foray into nonnegative matrix factorization dips into machine learning techniques, solving the "vocabulary" problem of beginners to perfumery lacking the vocabulary to discover their preferences.
+	This project was based on coursework from DAT-325  Data Validation: Quality and Cleaning and MAT-350 Applied Linear Algebra, and was influenced by my own independent research, particularly Aggarwal’s Recommender Systems: The Textbook, from which I developed the approach of TF-IDF weighting and cosine similarity.  The nonnegative matrix factorization (NMF) aspect brings the project into machine learning territory, where the algorithm independently discovers 15 distinct fragrance ‘archetypes’, which I then interpreted and named based on my own knowledge of perfumery. 
