@@ -13,7 +13,7 @@ This project was based on coursework from DAT-325  Data Validation: Quality and 
 The algorithm runs almost entirely client-side using Pyodide, (Python in the browser via WebAssembly):
 
 1. Parses ~24,000 fragrances from a semicolon-delimited CSV
-2. Builds a sparse fragrance-note matrix (~24k rows × ~1,600 columns) using a dictionary hash map for O(1) column lookup
+2. Builds a sparse fragrance-note matrix (~24k rows × ~1,600 columns) using a dictionary hash map for O(1) time complexity
 3. Applies TF-IDF weighting to down-weight common notes (e.g. musk, which appears in over half the dataset) and surface more distinctive ones
 4. Computes cosine similarity between the input fragrance and all others to generate recommendations
 
@@ -23,7 +23,7 @@ The NMF component does not run in bwrowser as sklearn proved too memory-intensiv
 
 ## The 15 Archetypes
 
-Nonn-negative matrix factorization (NMF) independently discovers fragrance archetypes, producing a list of top notes that a human can interpret. The algorithm was run at several values of k; k=15 was selected as any larger values got too specific, and smaller k values grouped together larger categories that I feel should have been distinctive.  The categories are below:
+Nonn-negative matrix factorization (NMF) independently discovers fragrance archetypes, producing a list of top notes that a human can interpret. The algorithm was run at several values of k; k=15 was selected as any larger values got too specific, and smaller k values grouped together larger categories that I feel should have been distinct.  The categories are below:
 
 | # | Archetype | Key Notes |
 |---|-----------|-----------|
@@ -48,9 +48,9 @@ Nonn-negative matrix factorization (NMF) independently discovers fragrance arche
 
 ## Dataset
 
-~24,063 fragrances scraped from [Fragrantica](https://www.fragrantica.com), sourced via Kaggle. Each entry includes top, middle, and base notes across 1,671 unique note terms.
+~24,063 fragrances scraped from [Fragrantica](https://www.fragrantica.com), sourced via [Kaggle](https://www.kaggle.com/datasets/olgagmiufana1/fragrantica-com-fragrance-dataset). Each entry includes top, middle, and base notes across 1,671 unique notes.
 
-Data cleaning included 40 manual note corrections (misspellings, synonyms, regional variants) applied in-memory via a dictionary map, preserving the original CSV.
+Data cleaning included 40 manual note corrections, addressing misspellings, synonyms, and regional variants (i.e., 'ambergris' and 'oud' became 'ambergris(oud)')
 
 Generic descriptors (e.g. "woody notes," "spicy notes") are excluded from NMF input but retained in the weighted similarity matrix.
 
