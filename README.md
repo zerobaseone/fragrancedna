@@ -2,7 +2,7 @@
 
 FragranceDNA solves a practical problem: people new to perfumery often struggle to articulate what they like beyond naming specific fragrances that they enjoy.  This project addresses that in two ways – given a fragrance that the user enjoys, it returns a ranked list of similar fragrances, and it identifies which ‘archetypes’ best describe their taste, giving them a vocabulary to use when exploring on their own.
 
-	This project was based on coursework from DAT-325  Data Validation: Quality and Cleaning and MAT-350 Applied Linear Algebra, and was influenced by my own independent research, particularly Aggarwal’s Recommender Systems: The Textbook, from which I developed the approach of TF-IDF weighting and cosine similarity.  The nonnegative matrix factorization (NMF) aspect brings the project into machine learning territory, where the algorithm independently discovers 15 distinct fragrance ‘archetypes’, which I then interpreted and named based on my own knowledge of perfumery. 
+This project was based on coursework from DAT-325  Data Validation: Quality and Cleaning and MAT-350 Applied Linear Algebra, and was influenced by my own independent research, particularly Aggarwal’s Recommender Systems: The Textbook, from which I developed the approach of TF-IDF weighting and cosine similarity.  The nonnegative matrix factorization (NMF) aspect brings the project into machine learning territory, where the algorithm independently discovers 15 distinct fragrance ‘archetypes’, which I then interpreted and named based on my own knowledge of perfumery. 
 
 **[Try it on my ePortfolio](https://zerobaseone.github.io/eportfolio/)**
 
