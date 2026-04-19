@@ -23,7 +23,7 @@ The NMF component does not run in bwrowser as sklearn proved too memory-intensiv
 
 ## The 15 Archetypes
 
-Nonn-negative matrix factorization (NMF) discovers fragrance archetypes independently from the data. The algorithm was run at several values of k; k=15 was selected as any larger values got too specific, and smaller k values grouped together larger categories.  The categories, named by me, are below:
+Nonn-negative matrix factorization (NMF) independently discovers fragrance archetypes, producing a list of top notes that a human can interpret. The algorithm was run at several values of k; k=15 was selected as any larger values got too specific, and smaller k values grouped together larger categories that I feel should have been distinctive.  The categories are below:
 
 | # | Archetype | Key Notes |
 |---|-----------|-----------|
